@@ -1,0 +1,6 @@
+<h1>Card details</h1>
+<p><strong>Title:</strong> <%= @task.title %></p>
+<p><strong>Details:</strong> <%= @task.details %></p>
+<%= link_to "Back", tasks_path %>
+<%= link_to "Edit", task_edit_path %>
+<%= link_to "Delete", task_destroy_path, data: {turbo_method: :delete} %>
